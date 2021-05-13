@@ -23,7 +23,7 @@ This is a solution to the [Huddle landing page with single introductory section 
 
 ### Links
 
-- Live Site URL: [https://luka85.github.io/Huddle-landing-page/]
+- Live Site URL: https://luka85.github.io/Huddle-landing-page-Bootstrap/
 
 ## My process
 
