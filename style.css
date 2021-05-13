@@ -1,0 +1,246 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background:bottom right 5rem/cover no-repeat url(images/bg-desktop.svg) #674baf;
+  color:#fff;
+  display:flex;
+  align-items: center;
+  height:100%;
+  min-height: 100vh;
+  padding:0 2rem;
+
+}
+
+.content-wrapper {
+  display:flex;
+  flex-direction: column;
+  height:100vh;
+  justify-content:space-between;
+}
+
+.content-wrapper .top-nav {
+  padding-top:2rem;
+}
+
+.top-nav .huddle {
+  width:80%;
+}
+
+.hero .left-top {
+  display:flex;
+  justify-content: center;
+}
+
+.hero .right-bottom{
+  padding-top:2rem;
+}
+
+.hero .right-bottom .title {
+  font-family: 'Poppins', sans-serif;
+  font-size:2.7rem;
+  font-weight:600;
+  line-height: 1.5;
+  padding-bottom:1.3rem;
+}
+
+.hero .right-bottom .description {
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.15rem;
+  line-height: 1.6;
+  padding-bottom: 2rem;
+}
+
+.hero .right-bottom .register {
+  display:inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size:1.2rem;
+  padding:0.8em 3.8em;
+  border-radius:100px;
+  background-color: #fff;
+  color:#7f5bdb;
+  box-shadow: 0 2px 10px 1px #1d1531;
+  text-decoration: none;
+}
+
+.hero .right-bottom .register:hover, 
+.hero .right-bottom .register:focus {
+  background-color: #e882e8;
+  color:#fff;
+  transform: scale(1.1);
+}
+
+.hero .hero-icons {
+  width:100%;
+  justify-content: flex-end;
+}
+
+.icon-list {
+  display:flex;
+}
+
+.icon-list .icon {
+  text-decoration: none;
+  color:#fff;
+  font-size: 1.3rem;
+  width:2.7rem;
+  height:2.7rem;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-radius:50%;
+  border:1.5px solid #fff;
+  margin-left:1rem;
+}
+
+.icon-list .icon:hover, 
+.icon-list .icon:focus {
+  color:#e882e8;
+ border-color: #e882e8;
+  transform: scale(1.1);
+}
+
+.footer {
+  display:flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.footer .attribution {
+    font-size: 0.9rem;
+  }
+
+  .attribution a {
+    color: #e882e8;
+  }
+
+  @media (max-width:1200px) {
+  body {
+    background:bottom 40% right 20%/cover no-repeat url(images/bg-mobile.svg) #674baf; 
+}
+  .content-wrapper {
+    max-width:834px;
+}
+
+  .hero .right-bottom {
+    text-align:center;
+    padding-bottom: 8rem;
+}
+
+  .hero .right-bottom .title {
+    font-size:2rem;
+}
+
+  .hero .right-bottom .description {
+    font-size:1.1rem;
+    padding: 0 2rem 3rem 2rem;
+  
+}
+
+  .hero .right-bottom .register {
+    font-size:1.1rem;
+}
+
+  .hero .hero-icons {
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+  .icon-list .icon {
+    font-size: 1.1rem;
+    width:2.4rem;
+    height:2.4rem;
+}
+
+  .footer .attribution {
+    font-size: 0.9rem;
+}
+  }
+
+  @media(max-width:768px) {
+    .hero .right-bottom{
+      text-align:center;
+      padding-bottom: 6rem;
+  }
+  
+  .hero .right-bottom .title {
+      font-size:1.6rem;
+  }
+  
+  .hero .right-bottom .description {
+      font-size:1rem;
+      letter-spacing:0.2px;
+      padding: 0 0 3rem 0;
+  }
+  
+  .hero .right-bottom .register {
+      font-size:0.9rem;
+  }
+  
+  .hero .hero-icons {
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
+  
+  .icon-list .icon {
+    font-size: 1rem;
+    width:2rem;
+    height:2rem;
+  }
+  
+  .footer .attribution {
+    text-align: center;
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+  
+  }
